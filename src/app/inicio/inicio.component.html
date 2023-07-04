@@ -42,7 +42,7 @@
                                 </div><!-- ^ Nombre ^ -->
                                 <div class="col-md-6">
                                     <div class="form-wrap">
-                                        <input class="form-input" id="request-form-apeP" type="text" name="apellido_p" required>
+                                        <input class="form-input" id="request-form-apeP" type="text" name="apellido_p" [(ngModel)]="visitante.apellido_paterno" required>
                                         <label class="form-label" for="request-form-apeP">Apellido paterno</label>
                                         <div class="valid-feedback">
                                             ¡Perfecto!
@@ -54,7 +54,7 @@
                                 </div><!-- ^ Apellidos-Paterno ^ -->
                                 <div class="col-md-6">
                                     <div class="form-wrap">
-                                        <input class="form-input" id="request-form-apeM" type="text" name="apellido_m" required>
+                                        <input class="form-input" id="request-form-apeM" type="text" name="apellido_m" [(ngModel)]="visitante.apellido_materno" required>
                                         <label class="form-label" for="request-form-apeM">Apellido materno</label>
                                         <div class="valid-feedback">
                                             ¡Perfecto!
@@ -66,7 +66,7 @@
                                 </div><!-- ^ Apellidos-Materno ^ -->
                                 <div class="col-md-6">
                                     <div class="form-wrap">
-                                        <input class="form-input" id="request-form-phone" type="text" name="tel" required>
+                                        <input class="form-input" id="request-form-phone" type="text" name="tel" [(ngModel)]="visitante.telefono" required>
                                         <label class="form-label" for="request-form-phone">Teléfono</label>
                                         <div class="valid-feedback">
                                             ¡Perfecto!
@@ -78,7 +78,7 @@
                                 </div><!-- ^ Teléfono ^ -->
                                 <div class="col-md-6">
                                     <div class="form-wrap">
-                                        <input class="form-input" id="request-form-email" type="email" name="email" required>
+                                        <input class="form-input" id="request-form-email" type="email" name="email" [(ngModel)]="visitante.email" required>
                                         <label class="form-label" for="request-form-email">Email</label>
                                         <div class="valid-feedback">
                                             ¡Perfecto!
@@ -90,7 +90,7 @@
                                 </div><!-- ^ Correo ^ -->
                                 <div class="col-md-6">
                                     <div class="form-wrap">
-                                        <input class="form-input" id="request-form-fecha" type="date" name="fecha" required>
+                                        <input class="form-input" id="request-form-fecha" type="date" name="fecha" [(ngModel)]="visitante.fecha" required>
                                         <label class="form-label" for="request-form-fecha"></label>
                                         <div class="valid-feedback">
                                             ¡Perfecto!
@@ -103,15 +103,18 @@
                                 <div class="col-md-6">
                                     <div class="form-wrap form-wrap-outside">
                                         <!--Select 2-->
-                                        <label class="form-label" for="request-form-select">Seleccionar Hora</label>
-                                        <select class="form-input select-filter" id="request-form-select" data-minimum-results-for-search="Infinity" name="hora" required>
+                                        <!-- <label class="form-label" for="request-form-select">Seleccionar Hora</label> -->
+                                        <!-- <input class="form-input" id="request-form-hora" type="text" name="hora" [(ngModel)]="visitante.hora" required> -->
+                                        <select class="form-input select-filter" id="request-form-select" data-minimum-results-for-search="Infinity" name="hora" [(ngModel)]="visitante.hora" required>
                                             <!-- Opciones del select -->
+                                            <option value="">Seleccionar Hora</option>
+                                            <option *ngFor="let p of horas" [value]="p.tiempo" >{{ p.tiempo }}</option>
                                         </select>
                                     </div>
                                 </div><!-- ^ Hora ^ -->
                                 <div class="col-12">
                                     <div class="form-wrap">
-                                        <textarea class="form-input" id="feedback-2-message" name="msg"></textarea>
+                                        <textarea class="form-input" id="feedback-2-message" name="msg" [(ngModel)]="visitante.descripcion"></textarea>
                                         <label class="form-label" for="feedback-2-message">Mensaje - Descripción (opcional)</label>
                                     </div>
                                 </div><!-- ^ Msg/extra ^ -->
@@ -119,7 +122,7 @@
                                     <p>Su información es confidencial y segura en nuestras manos.</p>
                                     <div class="row">
                                         <div class="col-md-6">
-                                            <button class="button button-block button-primary" type="submit">Enviar</button>
+                                            <button class="button button-block button-primary" type="submit" (click)="guardarCita()" >Enviar</button>
                                         </div>
                                     </div>
                                 </div><!-- ^ Botón ^ -->
