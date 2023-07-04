@@ -1,0 +1,145 @@
+<div class="preloader">
+    <div class="preloader-body">
+        <div class="cssload-container">
+            <div class="cssload-speeding-wheel"> </div>
+        </div>
+        <p>Loading...</p>
+    </div>
+</div>
+<app-carrucel></app-carrucel>
+<div class="page">
+    <!-- todo esto esta en home -->
+    <app-resumen></app-resumen>
+
+    <app-informacion-abogado></app-informacion-abogado>
+
+    <app-abogados-experiencia></app-abogados-experiencia>
+
+    <!-- <app-testimonios></app-testimonios> -->
+
+    <!-- esto es el formulario -->
+    <section class="bg-whisper" id="formulario" style="margin-top: 300px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-lg-9 col-xl-7">
+                    <div class="section-50 section-md-75 section-xl-100">
+                        <h3>Registro de cita</h3>
+                        <form class="rd-mailform needs-validation" novalidate method="post" action="/consulta">
+                            <!--data-form-output="form-output-global" data-form-type="contact" bat/rd-mailform.php-->
+                        
+                            <div class="row row-30">
+                                <div class="col-md-6">
+                                    <div class="form-wrap">
+                                        <input class="form-input" id="request-form-name" type="text" name="nombre" required>
+                                        <label class="form-label" for="request-form-name">Nombre</label>
+                                        <div class="valid-feedback">
+                                            ¡Perfecto!
+                                        </div>
+                                        <div class="invalid-feedback">
+                                            Por favor, introduzca su nombre.
+                                        </div>
+                                    </div>
+                                </div><!-- ^ Nombre ^ -->
+                                <div class="col-md-6">
+                                    <div class="form-wrap">
+                                        <input class="form-input" id="request-form-apeP" type="text" name="apellido_p" required>
+                                        <label class="form-label" for="request-form-apeP">Apellido paterno</label>
+                                        <div class="valid-feedback">
+                                            ¡Perfecto!
+                                        </div>
+                                        <div class="invalid-feedback">
+                                            Por favor, introduzca su apellido paterno.
+                                        </div>
+                                    </div>
+                                </div><!-- ^ Apellidos-Paterno ^ -->
+                                <div class="col-md-6">
+                                    <div class="form-wrap">
+                                        <input class="form-input" id="request-form-apeM" type="text" name="apellido_m" required>
+                                        <label class="form-label" for="request-form-apeM">Apellido materno</label>
+                                        <div class="valid-feedback">
+                                            ¡Perfecto!
+                                        </div>
+                                        <div class="invalid-feedback">
+                                            Por favor, introduzca su apellido materno.
+                                        </div>
+                                    </div>
+                                </div><!-- ^ Apellidos-Materno ^ -->
+                                <div class="col-md-6">
+                                    <div class="form-wrap">
+                                        <input class="form-input" id="request-form-phone" type="text" name="tel" required>
+                                        <label class="form-label" for="request-form-phone">Teléfono</label>
+                                        <div class="valid-feedback">
+                                            ¡Perfecto!
+                                        </div>
+                                        <div class="invalid-feedback">
+                                            Por favor, introduzca su teléfono.
+                                        </div>
+                                    </div>
+                                </div><!-- ^ Teléfono ^ -->
+                                <div class="col-md-6">
+                                    <div class="form-wrap">
+                                        <input class="form-input" id="request-form-email" type="email" name="email" required>
+                                        <label class="form-label" for="request-form-email">Email</label>
+                                        <div class="valid-feedback">
+                                            ¡Perfecto!
+                                        </div>
+                                        <div class="invalid-feedback">
+                                            Por favor, introduzca su email.
+                                        </div>
+                                    </div>
+                                </div><!-- ^ Correo ^ -->
+                                <div class="col-md-6">
+                                    <div class="form-wrap">
+                                        <input class="form-input" id="request-form-fecha" type="date" name="fecha" required>
+                                        <label class="form-label" for="request-form-fecha"></label>
+                                        <div class="valid-feedback">
+                                            ¡Perfecto!
+                                        </div>
+                                        <div class="invalid-feedback">
+                                            Por favor, introduzca la fecha de la cita.
+                                        </div>
+                                    </div>
+                                </div><!-- ^ Calendario ^ -->
+                                <div class="col-md-6">
+                                    <div class="form-wrap form-wrap-outside">
+                                        <!--Select 2-->
+                                        <label class="form-label" for="request-form-select">Seleccionar Hora</label>
+                                        <select class="form-input select-filter" id="request-form-select" data-minimum-results-for-search="Infinity" name="hora" required>
+                                            <!-- Opciones del select -->
+                                        </select>
+                                    </div>
+                                </div><!-- ^ Hora ^ -->
+                                <div class="col-12">
+                                    <div class="form-wrap">
+                                        <textarea class="form-input" id="feedback-2-message" name="msg"></textarea>
+                                        <label class="form-label" for="feedback-2-message">Mensaje - Descripción (opcional)</label>
+                                    </div>
+                                </div><!-- ^ Msg/extra ^ -->
+                                <div class="col-12">
+                                    <p>Su información es confidencial y segura en nuestras manos.</p>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <button class="button button-block button-primary" type="submit">Enviar</button>
+                                        </div>
+                                    </div>
+                                </div><!-- ^ Botón ^ -->
+                            </div>
+                        </form>
+                        
+                    </div>
+                </div>
+                <div class="col-xl-5 d-none d-xl-block">
+                    <div style="margin-top: -40px;"><img src="../../assets/images/home-4-472x753.png" alt="" width="472"
+                            height="753" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <app-noticias></app-noticias> -->
+
+
+
+</div>
+<div class="snackbars" id="form-output-global"></div>
