@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>PaginaWeb</title>
+  <title>Roaro&Asociados</title>
   <base href="/">
 
   
@@ -13,7 +13,7 @@
 </head>
 <body>
 
-  <!-- menu -->
+  <!-- >>>> menu <<<< -->
 
   <div class="preloader">
     <div class="preloader-body">
@@ -23,6 +23,7 @@
       <p>Loading...</p>
     </div>
   </div>
+
   <div class="page">
   <header class="page-head">
     <div class="rd-navbar-wrap">
@@ -36,22 +37,22 @@
                   <li>
                     <div class="unit unit-horizontal unit-spacing-xs align-items-center">
                       <div class="unit-left"><span class="novi-icon icon icon-xxs icon-primary material-icons-phone"></span></div>
-                      <div class="unit-body"><a class="link-dusty-gray" href="tel:#">+1 (232) 349–8447</a></div>
+                      <div class="unit-body"><a class="link-dusty-gray" id="tel" href="#CopiarTelefono" title="Copiar Telefono" onclick="CopyToClipboard('tel'); return false;">+52 331 895 6766</a></div>
                     </div>
                   </li>
                   <li>
                     <div class="unit unit-horizontal unit-spacing-xs align-items-center">
                       <div class="unit-left"><span class="novi-icon icon icon-xxs icon-primary fa-envelope-o"></span></div>
-                      <div class="unit-body"><a class="link-dusty-gray" href="mailto:#">info@demolink.org</a></div>
+                      <div class="unit-body"><a class="link-dusty-gray" title="Enviar Correo" href="mailto:licenciado.roaro@gmail.com">licenciado.roaro@gmail.com</a></div>
                     </div>
                   </li>
                 </ul>
                 <div class="rd-navbar-aside-group">
-                  <ul class="list-inline list-inline-reset">
+                  <!-- <ul class="list-inline list-inline-reset"> // Redes sociales del cliente | no hay de momento ninguna.
                     <li><a class="novi-icon icon icon-circle icon-nobel-filled icon-xxs-smaller fa fa-facebook" href="#"></a></li>
                     <li><a class="novi-icon icon icon-circle icon-nobel-filled icon-xxs-smaller fa fa-twitter" href="#"></a></li>
                     <li><a class="novi-icon icon icon-circle icon-nobel-filled icon-xxs-smaller fa fa-google-plus" href="#"></a></li>
-                  </ul>
+                  </ul> -->
                 </div>
               </div>
             </div>
@@ -62,13 +63,13 @@
             </div>
             <div class="rd-navbar-nav-wrap">
               <div class="rd-navbar-nav-inner">
-                <div class="rd-navbar-btn-wrap"><a class="button button-smaller button-primary-outline" href="#formulario">Realizar Cita</a></div>
+                <div class="rd-navbar-btn-wrap"><a class="button button-smaller button-primary-outline" href="#Citas">Realizar Cita</a></div>
                 <ul class="rd-navbar-nav">
                   <li><a href="/">Inicio</a>
                   </li>
-                  <li><a href="/nosotros">Sobro Nosotros</a>
+                  <li><a href="/nosotros">Sobre Nosotros</a>
                   </li>
-                  <li><a href="contact-us.html">Contacts</a>
+                  <li><a href="contact-us.html">Contactos</a>
                   </li>
                 </ul>
               </div>
@@ -80,11 +81,11 @@
   </header>
 </div>
 
- <!-- menu -->
+ <!-- >> menu << -->
 
   <app-root></app-root>
 
-  <!-- pie de pagina -->
+  <!-- >>>> pie de pagina <<<< -->
 
   <footer class="page-foot bg-ebony-clay">
     <div class="section-40 section-md-75">
@@ -96,16 +97,14 @@
                             <div class="inset-xl-right-20" style="max-width: 510px;"><a class="brand"
                                     href="index.html"><img src="assets/images/logo-inverse-143x28.png" alt="" width="143"
                                         height="28" /></a>
-                                <p>
-                                    If you or your business is facing a legal
-                                    challenge that calls for sound advice and skilled representation, contact us
-                                    today to arrange a free consultation with an attorney.
+                                <p style="text-align: justify;">
+                                  Si usted o su empresa requieren de asesoría o servicios legales calificados, contáctenos hoy mismo para programar una consulta gratuita con uno de nuestros abogados certificados.
                                 </p><a class="link link-group link-group-animated link-bold link-white"
-                                    href="#"><span>Free Consultation</span><span
+                                    href="#Citas"><span>Realizar una cita</span><span
                                         class="novi-icon icon icon-xxs icon-primary fa fa-angle-right"></span></a>
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-4 col-xl-3">
+                        <!-- <div class="col-md-6 col-lg-4 col-xl-3"> // No lo veo necesario | Tu que opinas? xd
                             <p class="h7">Recent Posts</p>
                             <article class="post post-preview post-preview-inverse"><a href="#">
                                     <div class="unit unit-horizontal unit-spacing-lg">
@@ -151,51 +150,44 @@
                                         </div>
                                     </div>
                                 </a></article>
-                        </div>
-                        <div class="col-md-6 col-lg-4 col-xl-3">
-                            <p class="h7">Quick links</p>
+                        </div> -->
+                        <div class="col-md-6 col-lg-4 col-xl-1">
+                            <p class="h7" style="color: #2b2f40;">ESPACIO</p> <!-- No se me ocurre un mejor nombre que "Atajos" o "Links Rapidos" | Ideas? -->
                             <div class="row" style="max-width: 270px;">
                                 <div class="col-6">
                                     <ul class="list-marked-variant-2">
-                                        <li><a href="index.html">Home</a></li>
-                                        <li><a href="#">Services</a></li>
-                                        <li><a href="#">Careers</a></li>
-                                        <li><a href="#">Blog</a></li>
-                                    </ul>
-                                </div>
-                                <div class="col-6">
+                                        <li><a href="#">Inicio</a></li>
+                                      </ul>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 col-xl-3">
+                            <p class="h7">Atajos</p> <!-- Segunda parte de "Atajos" -->
+                            <div class="row" style="max-width: 270px;">
+                              <div class="col-5">
+                                <ul class="list-marked-variant-2">
+                                <li><a href="nosotros">Nosotros</a></li>
+                              </ul>
+                          </div>
+                                <div class="col-5">
                                     <ul class="list-marked-variant-2">
-                                        <li><a href="about-us.html">About us</a></li>
-                                        <li><a href="contact-us.html">Contacts</a></li>
-                                        <li><a href="#">Appointment</a></li>
+                                        <li><a href="about-us.html">Contactos</a></li>
+                                        <!-- <li><a href="#Citas">Registrar Cita</a></li> // Redundante | Alguna otra opcion? -->
                                     </ul>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-4 col-xl-3">
-                            <p class="h7">Contact us</p>
+                            <p class="h7">¡Contactanos!</p>
                             <address class="contact-info text-left">
-                                <div class="unit unit-horizontal unit-spacing-md align-items-center">
-                                    <div class="unit-left"><span
-                                            class="novi-icon icon icon-xs icon-storm-gray material-icons-phone"></span>
-                                    </div>
-                                    <div class="unit-body"><a class="link-white" href="tel:#">+123 234 984 47 45</a>
-                                    </div>
-                                </div>
-                                <div class="unit unit-horizontal unit-spacing-md align-items-center">
-                                    <div class="unit-left"><span
-                                            class="novi-icon icon icon-xs icon-storm-gray fa fa-envelope-o"></span>
-                                    </div>
-                                    <div class="unit-body"><a class="link-white"
-                                            href="mailto:#">info@demolink.org</a></div>
-                                </div>
-                                <div class="unit unit-horizontal unit-spacing-md">
-                                    <div class="unit-left"><span
-                                            class="novi-icon icon icon-xs icon-storm-gray material-icons-place"></span>
-                                    </div>
-                                    <div class="unit-body"><a class="link-white d-inline" href="#">6036 Richmond
-                                            hwy,<br>Alexandria, VA USA 22303</a></div>
-                                </div>
+                              <div class="unit unit-horizontal unit-spacing-md align-items-center">
+                                <div class="unit-left"><span class="novi-icon icon icon-xs icon-storm-gray material-icons-phone"></span></div>
+                                <div class="unit-body"><a class="link-dusty-gray" id="tel" href="#CopiarTelefono" title="Copiar Telefono" onclick="CopyToClipboard('tel'); return false;">+52 331 895 6766</a></div>
+                              </div>
+                              <div class="unit unit-horizontal unit-spacing-md align-items-center">
+                                <div class="unit-left"><span class="novi-icon icon icon-xs icon-storm-gray fa fa-envelope-o"></span></div>
+                                <div class="unit-body"><a class="link-dusty-gray" title="Enviar Correo" href="mailto:licenciado.roaro@gmail.com">licenciado.roaro@gmail.com</a></div>
+                              </div>
                             </address>
                         </div>
                     </div>
@@ -211,29 +203,37 @@
             <div class="row row-15 flex-md-row-reverse justify-content-md-between align-items-md-center">
                 <div class="col-md-6 text-md-right">
                     <div class="group-sm group-middle">
-                        <p class="font-italic text-white">Follow Us:</p>
-                        <ul class="list-inline list-inline-reset">
+                      <p class="font-italic text-white"><a href="https://tonkslacaramel.000webhostapp.com/" style="color: rgb(80, 80, 187)">Desarrolladores</a></p>
+                        <!-- <ul class="list-inline list-inline-reset"> // Son redes sociales, por si quieren poner alguina aqui.
                             <li><a class="novi-icon icon icon-circle icon-bright-gray-filled icon-xxs-smaller fa fa-facebook"
                                     href="#"></a></li>
                             <li><a class="novi-icon icon icon-circle icon-bright-gray-filled icon-xxs-smaller fa fa-twitter"
                                     href="#"></a></li>
                             <li><a class="novi-icon icon icon-circle icon-bright-gray-filled icon-xxs-smaller fa fa-google-plus"
                                     href="#"></a></li>
-                        </ul>
+                        </ul> -->
                     </div>
                 </div>
                 <div class="col-md-6 text-md-left">
-                    <p class="rights text-white"><span
-                            class="copyright-year"></span><span>&nbsp;&#169;&nbsp;</span><span>LawExpert.&nbsp; All
-                            Rights Reserved.</span>Design&nbsp;by&nbsp;<a
-                            href="https://www.templatemonster.com">TemplateMonster</a></p>
+                  <p class="rights text-white"><span class="copyright-year"></span><span>&nbsp;&#169;&nbsp;</span><span>Roaro&Asociados.&nbsp; Derechos reservados.</span>Diseñado&nbsp;por&nbsp;<a href="https://www.templatemonster.com" style="color: rgb(80, 80, 187)">TemplateMonster</a></p>
                 </div>
             </div>
         </div>
     </div>
 </footer>
 
- <!-- pie de pagina -->
+ <!-- >> pie de pagina << -->
 
+ <script>
+  function CopyToClipboard(id)
+  {
+  var r = document.createRange();
+  r.selectNode(document.getElementById(id));
+  window.getSelection().removeAllRanges();
+  window.getSelection().addRange(r);
+  document.execCommand('copy');
+  window.getSelection().removeAllRanges();
+  }
+  </script>
 </body>
 </html>

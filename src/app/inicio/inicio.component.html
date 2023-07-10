@@ -18,13 +18,13 @@
     <!-- <app-testimonios></app-testimonios> -->
 
     <!-- esto es el formulario -->
-    <section class="bg-whisper" id="formulario" style="margin-top: 300px;">
+    <section class="bg-whisper" id="Citas" style="margin-top: 300px;">
         <div class="container">
             <div class="row">
                 <div class="col-md-10 col-lg-9 col-xl-7">
                     <div class="section-50 section-md-75 section-xl-100">
                         <h3>Registro de cita</h3>
-                        <form class="rd-mailform needs-validation" novalidate method="post" action="/consulta">
+                        <form class="rd-mailform needs-validation" action="">
                             <!--data-form-output="form-output-global" data-form-type="contact" bat/rd-mailform.php-->
                         
                             <div class="row row-30">
@@ -90,7 +90,7 @@
                                 </div><!-- ^ Correo ^ -->
                                 <div class="col-md-6">
                                     <div class="form-wrap">
-                                        <input class="form-input" id="request-form-fecha" type="date" name="fecha" [(ngModel)]="visitante.fecha" required>
+                                        <input class="form-input" id="request-form-fecha" type="date" name="fecha" style="color: #9f9f9f;" [(ngModel)]="visitante.fecha" required>
                                         <label class="form-label" for="request-form-fecha"></label>
                                         <div class="valid-feedback">
                                             ¡Perfecto!
@@ -103,26 +103,25 @@
                                 <div class="col-md-6">
                                     <div class="form-wrap form-wrap-outside">
                                         <!--Select 2-->
-                                        <!-- <label class="form-label" for="request-form-select">Seleccionar Hora</label> -->
                                         <!-- <input class="form-input" id="request-form-hora" type="text" name="hora" [(ngModel)]="visitante.hora" required> -->
-                                        <select class="form-input select-filter" id="request-form-select" data-minimum-results-for-search="Infinity" name="hora" [(ngModel)]="visitante.hora" required>
-                                            <!-- Opciones del select -->
-                                            <option value="">Seleccionar Hora</option>
-                                            <option *ngFor="let p of horas" [value]="p.tiempo" >{{ p.tiempo }}</option>
+                                        <!-- <label class="form-label" for="request-form-select">Seleccionar Hora</label> -->
+                                        <select style="color: #9f9f9f;" class="form-input select-filter" id="horaSelect" name="horaSelect" [(ngModel)]="visitante.hora">
+                                            <option value="" selected>Seleccionar Hora</option>
+                                            <option *ngFor="let p of horas" value="{{ p.tiempo }}">{{ p.tiempo }}</option>
                                         </select>
                                     </div>
                                 </div><!-- ^ Hora ^ -->
                                 <div class="col-12">
                                     <div class="form-wrap">
                                         <textarea class="form-input" id="feedback-2-message" name="msg" [(ngModel)]="visitante.descripcion"></textarea>
-                                        <label class="form-label" for="feedback-2-message">Mensaje - Descripción (opcional)</label>
+                                        <label class="form-label" for="feedback-2-message">Descripción de su problema.</label>
                                     </div>
                                 </div><!-- ^ Msg/extra ^ -->
                                 <div class="col-12">
-                                    <p>Su información es confidencial y segura en nuestras manos.</p>
+                                    <p>Su información se mantendra confidencial y segura en nuestras manos.</p>
                                     <div class="row">
                                         <div class="col-md-6">
-                                            <button class="button button-block button-primary" type="submit" (click)="guardarCita()" >Enviar</button>
+                                            <button class="button button-block button-primary" (click)="guardarCita()" >Enviar</button>
                                         </div>
                                     </div>
                                 </div><!-- ^ Botón ^ -->

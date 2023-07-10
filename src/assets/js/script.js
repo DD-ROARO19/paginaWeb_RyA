@@ -602,15 +602,7 @@
 		 * Select2
 		 * @description Enables select2 plugin
 		 */
-		if (plugins.selectFilter.length) {
-			for (var i = 0; i < plugins.selectFilter.length; i++) {
-				var select = $(plugins.selectFilter[i]);
-
-				select.select2({
-					theme: select.attr('data-custom-theme') ? select.attr('data-custom-theme') : "bootstrap"
-				}).next().addClass(select.attr("class").match(/(input-sm)|(input-lg)|($)/i).toString().replace(new RegExp(",", 'g'), " "));
-			}
-		}
+		
 
 		/**
 		 * Progress bar

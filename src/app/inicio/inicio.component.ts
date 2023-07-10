@@ -21,11 +21,15 @@ export class InicioComponent {
     email:"",
     telefono:"",
     fecha:"",
-    hora:"",
+    hora: "",
     descripcion:""
   }
 
   constructor( private citaVisitante: CitasService ) {}
+
+  testeo(){
+    console.log(this.visitante);
+  }
 
   guardarCita(){ // VVVV Guardar VVVV
     if (
