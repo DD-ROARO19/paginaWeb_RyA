@@ -19,6 +19,7 @@ import { GenteComponent } from './AboutUS/gente/gente.component';
 
 // SERVICIOS
 import { CitasService } from './servicios/citas.service';
+import { ContactoComponent } from './contacto/contacto.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { CitasService } from './servicios/citas.service';
     QuienesSomosComponent,
     AbogadosComponent,
     GenteComponent,
+    ContactoComponent,
 
   ],
   imports: [
